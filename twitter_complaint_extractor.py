@@ -4,10 +4,10 @@ import os
 import jsonpickle
 import tweepy
 #Pass our consumer key and consumer secret to Tweepy's user authentication handler
-auth = tweepy.OAuthHandler('mskU37j95CFJkfczA4bywZvhl', 'jOrJCoa8TdF38Tfn0AqVebbWyHhg1Qlg3d1mkM1rCx7ObW2Gwv')
+auth = tweepy.OAuthHandler('####', '####')
 
 #Pass our access token and access secret to Tweepy's user authentication handler
-auth.set_access_token('2394660721-GlHAUz2KZKHTotwTq5cFX2f6spjh4PgEn3N6k1E', 'ZybxVBxby2WXfCclvC4zHaENS9p18HKjaozNHIpYoIYDf')
+auth.set_access_token('##****', '##****')
 
 #Creating a twitter API wrapper using tweepy
 #Details here http://docs.tweepy.org/en/v3.5.0/api.html
@@ -24,7 +24,7 @@ place_id = places[0].id
 print('India id is: ',place_id)
 
 #Switching to application authentication
-auth = tweepy.AppAuthHandler('mskU37j95CFJkfczA4bywZvhl', 'jOrJCoa8TdF38Tfn0AqVebbWyHhg1Qlg3d1mkM1rCx7ObW2Gwv')
+auth = tweepy.AppAuthHandler('###***', '###****')
 
 #Setting up new api wrapper, using authentication only
 api = tweepy.API(auth, wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
@@ -45,7 +45,7 @@ tweetCount = 0
 d= open("guru99.txt","w+")
 
 #Open a text file to save the tweets to
-with open('PoGo_USA_Tutorial.json', 'w') as f:
+with open('complaints_railway.json', 'w') as f:
 
     #Tell the Cursor method that we want to use the Search API (api.search)
     #Also tell Cursor our query, and the maximum number of tweets to return
